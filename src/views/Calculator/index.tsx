@@ -154,7 +154,7 @@ function Calculator() {
                                         </Grid>
                                         <Grid item xs={12} sm={6}>
                                             <div className="calculator-card-action-area-inp-wrap">
-                                                <p className="calculator-card-action-area-inp-wrap-title">TIME price at purchase ($)</p>
+                                                <p className="calculator-card-action-area-inp-wrap-title">VERSE price at purchase ($)</p>
                                                 <OutlinedInput
                                                     type="number"
                                                     placeholder="Amount"
@@ -174,7 +174,7 @@ function Calculator() {
                                         </Grid>
                                         <Grid item xs={12} sm={6}>
                                             <div className="calculator-card-action-area-inp-wrap">
-                                                <p className="calculator-card-action-area-inp-wrap-title">Future TIME market price ($)</p>
+                                                <p className="calculator-card-action-area-inp-wrap-title">Future VERSE market price ($)</p>
                                                 <OutlinedInput
                                                     type="number"
                                                     placeholder="Amount"
@@ -208,8 +208,8 @@ function Calculator() {
                                         <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>${calcCurrentWealth()}</>}</p>
                                     </div>
                                     <div className="data-row">
-                                        <p className="data-row-name">TIME rewards estimation</p>
-                                        <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{rewardsEstimation} TIME</>}</p>
+                                        <p className="data-row-name">VERSE rewards estimation</p>
+                                        <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{rewardsEstimation} VERSE</>}</p>
                                     </div>
                                     <div className="data-row">
                                         <p className="data-row-name">Potential return</p>

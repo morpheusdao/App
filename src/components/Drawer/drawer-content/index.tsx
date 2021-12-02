@@ -40,9 +40,9 @@ function NavContent() {
     return (
         <div className="dapp-sidebar">
             <div className="branding-header">
-                {/* <Link href="https://traverse.money" target="_blank">
-                    <img alt="" src={WonderlandIcon} />
-                </Link> */}
+                <Link href="https://traverse.money" target="_blank">
+                    <img alt="" src={WonderlandIcon} width={130}/>
+                </Link>
 
                 {address && (
                     <div className="wallet-link">

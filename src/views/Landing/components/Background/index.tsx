@@ -7,7 +7,7 @@ function Background() {
         <div className="landing-background">
             <div className="landing-background-blobs-top">
                 <video autoPlay muted loop id="myVideo">
-                    <source  src="Background.mp4" type="video/mp4" />
+                    <source  src="background.mp4" type="video/mp4" />
                 </video>
             </div>
         </div>
