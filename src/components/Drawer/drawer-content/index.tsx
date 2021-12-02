@@ -127,16 +127,22 @@ function NavContent() {
                             <p>Calculator</p>
                         </div>
                     </Link>
+                    <Link href="https://traverse.gitbook.io/traverse/" target="_blank" className={classnames("button-dapp-menu", { active: isActive })}>
+                        <div className="dapp-menu-item">
+                            <img alt="" src={DocsIcon} />
+                            <p>Docs</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className="dapp-menu-doc-link">
-                <Link href="https://traverse.gitbook.io/traverse/" target="_blank">
+                {/* <Link href="https://traverse.gitbook.io/traverse/" target="_blank">
                     <img alt="" src={DocsIcon} />
                     <p>Docs</p>
                 </Link>
                 <Link href="https://legacy.traverse.money/" target="_blank">
                     <p>Legacy website</p>
-                </Link>
+                </Link> */}
             </div>
             <Social />
         </div>
