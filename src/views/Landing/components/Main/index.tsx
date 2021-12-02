@@ -10,8 +10,8 @@ function Main() {
                 <img src={CatImg} alt="" />
             </div> */}
             <div className="landing-main-title-wrap">
-                <p>The Multi Chain</p>
-                <p>Reserve Currency</p>
+                <p>The Interoperable</p>
+                <p>Reserve Currency of DeFi</p>
             </div>
             {/* <div className="landing-main-help-text-wrap">
                 <p>Financial tools to grow your wealth - stake</p>

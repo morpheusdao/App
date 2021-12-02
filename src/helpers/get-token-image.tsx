@@ -1,5 +1,5 @@
-import VerseImg from "../assets/tokens/TIME.svg";
-import SverseImg from "../assets/tokens/MEMO.png";
+import VerseImg from "../assets/tokens/VERSE.svg";
+import SverseImg from "../assets/tokens/SVERSE.svg";
 
 function toUrl(tokenPath: string): string {
     const host = window.location.origin;

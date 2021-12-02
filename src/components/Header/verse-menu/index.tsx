@@ -58,8 +58,8 @@ function VerseMenu() {
                 {({ TransitionProps }) => (
                     <Fade {...TransitionProps} timeout={200}>
                         <div className="tooltip">
-                            <Link className="tooltip-item" href={`https://www.traderjoexyz.com/#/trade?inputCurrency=&outputCurrency=${VERSE_ADDRESS}`} target="_blank">
-                                <p>Buy on Trader Joe</p>
+                            <Link className="tooltip-item" href={`https://exchange.lydia.finance/#/swap?inputCurrency=&outputCurrency=${VERSE_ADDRESS}`} target="_blank">
+                                <p>Buy on Lydia Finance</p>
                             </Link>
 
                             {isEthereumAPIAvailable && (

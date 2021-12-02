@@ -4,7 +4,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import MenuIcon from "../../assets/icons/hamburger.svg";
 import VerseMenu from "./verse-menu";
 import ConnectButton from "./connect-button";
-// import WrapButton from "./wrap-button";
+import WrapButton from "./wrap-button";
 import "./header.scss";
 import { DRAWER_WIDTH, TRANSITION_DURATION } from "../../constants/style";
 
@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
 function Header({ handleDrawerToggle, drawe }: IHeader) {
     const classes = useStyles();
     const isVerySmallScreen = useMediaQuery("(max-width: 400px)");
-    // const isWrapShow = useMediaQuery("(max-width: 480px)");
+    const isWrapShow = useMediaQuery("(max-width: 480px)");
 
     return (
         <div className={`${classes.topBar} ${!drawe && classes.topBarShift}`}>
@@ -55,7 +55,7 @@ function Header({ handleDrawerToggle, drawe }: IHeader) {
                     </div>
                     <div className="dapp-topbar-btns-wrap">
                         {!isVerySmallScreen && <VerseMenu />}
-                        {/* {!isWrapShow && <WrapButton />} */}
+                        {!isWrapShow && <WrapButton />}
                         <ConnectButton />
                     </div>
                 </Toolbar>
