@@ -34,7 +34,7 @@ export const wavax = new CustomBond({
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
         [Networks.AVAX]: {
-            bondAddress: "0xE02B1AA2c4BE73093BE79d763fdFFC0E3cf67318",
+            bondAddress: "0xa28DDB429DEEE0c6D70580f318A0cEf5bD6dC883",
             reserveAddress: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
         },
     },
@@ -74,4 +74,4 @@ export const avaxVerse = new CustomLPBond({
 });
 
 // export default [mim, wavax, mimTime, avaxTime];
-export default [dai];
+export default [dai, wavax];

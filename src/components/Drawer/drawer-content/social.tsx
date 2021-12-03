@@ -19,7 +19,7 @@ export default function Social() {
                 <SvgIcon viewBox="0 0 32 32" color="primary" component={Telegram} />
             </Link>
 
-            <Link href="https://github.com/traverse-Money/traverse-frontend" target="_blank">
+            <Link href="https://github.com/Traverse-money" target="_blank">
                 <SvgIcon color="primary" component={GitHub} />
             </Link>
         </div>
