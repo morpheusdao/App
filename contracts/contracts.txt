@@ -1,0 +1,41 @@
+VERSE token:
+https://snowtrace.io/address/0xB72ab6f7177bBb41eFcC17D817778d77460259F1#code
+
+sVERSE token:
+https://snowtrace.io/address/0x069A2224A09f8208541bcFA1b27Af5EC9c5EEb1F#code
+
+Staking:
+https://snowtrace.io/address/0x4daaD77801CB55616E6e7728248374de7D702E0b#code
+
+Staking Helper:
+https://snowtrace.io/address/0xf78844B35C5E622F6085A6f7B8c41D784e4a3FC5#code
+
+StakingWarmp:
+https://snowtrace.io/address/0x61DD09cD83d6bEd0AB622eaFa8bC9778791C0CAf#code
+
+Treasury:
+https://snowtrace.io/address/0x50862E119a56ff41c6d660128e072ADd7dEc837b#code
+
+StakingDistributor:
+https://snowtrace.io/address/0xa137a2cc60d47b29a74da9e14d7164e1136ccad9#code
+
+DAO:
+https://snowtrace.io/address/0xd30c11e55Ce17FC305F48949F5DC5E8B76cD536b#code
+
+DAI-BondDepository:
+https://snowtrace.io/address/0x658aa84B0651A4aE2739773c3C8fE698e6c2A7d3#code
+
+BondCalulator:
+https://snowtrace.io/address/0x970fA579FA01E56B6FCE4E8A91Bf81DD84b3B559#code
+
+DAI token address:
+https://snowtrace.io/address/0xd586e7f844cea2f87f50152665bcbc2c279d8d70#code
+
+DAI-VERSE LP address:
+https://snowtrace.io/address/0x907c9dc537a5ae4e5d56d3c881de0382cef43a3a#code
+
+wsVERSE address:
+https://snowtrace.io/address/0xE6420ee02D2B61Bd8556E5F8a5197983ce51e1f1#code
+
+wAvaxBond Depository:
+https://snowtrace.io/address/0xa28DDB429DEEE0c6D70580f318A0cEf5bD6dC883#code
