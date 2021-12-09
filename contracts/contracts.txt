@@ -2,16 +2,28 @@ VERSE token:
 https://snowtrace.io/address/0xB72ab6f7177bBb41eFcC17D817778d77460259F1#code
 
 sVERSE token:
+OLD:
 https://snowtrace.io/address/0x069A2224A09f8208541bcFA1b27Af5EC9c5EEb1F#code
+NEW:
+https://snowtrace.io/address/0x0e414c2a5b3319347e6d7280a4d31aa750c8ff9f#code
 
 Staking:
+OLD:
 https://snowtrace.io/address/0x4daaD77801CB55616E6e7728248374de7D702E0b#code
+NEW:
+https://snowtrace.io/address/0x80d1adcb96ff3ab8404b765c6cf5d2722affac0e#code
 
 Staking Helper:
+OLD:
 https://snowtrace.io/address/0xf78844B35C5E622F6085A6f7B8c41D784e4a3FC5#code
+NEW:
+https://snowtrace.io/address/0x51cb1e0f4b0b31bb1620dbbc2df4bd548fa59b59#code
 
 StakingWarmp:
+OLD:
 https://snowtrace.io/address/0x61DD09cD83d6bEd0AB622eaFa8bC9778791C0CAf#code
+NEW:
+https://snowtrace.io/address/0x3257e4293c1f19928f325bd89400706dfaa22724#code
 
 Treasury:
 https://snowtrace.io/address/0x50862E119a56ff41c6d660128e072ADd7dEc837b#code
