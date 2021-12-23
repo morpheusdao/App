@@ -7,11 +7,15 @@ https://snowtrace.io/address/0x069A2224A09f8208541bcFA1b27Af5EC9c5EEb1F#code
 NEW:
 https://snowtrace.io/address/0x0e414c2a5b3319347e6d7280a4d31aa750c8ff9f#code
 
+0x28F930fB6a2FbBa4667eF5394dEE96e24520cA34
+
 Staking:
 OLD:
 https://snowtrace.io/address/0x4daaD77801CB55616E6e7728248374de7D702E0b#code
 NEW:
 https://snowtrace.io/address/0x80d1adcb96ff3ab8404b765c6cf5d2722affac0e#code
+
+0x3fb7931f7BFA9f318Fbf2346f568802a76531774
 
 Staking Helper:
 OLD:
@@ -19,11 +23,15 @@ https://snowtrace.io/address/0xf78844B35C5E622F6085A6f7B8c41D784e4a3FC5#code
 NEW:
 https://snowtrace.io/address/0x51cb1e0f4b0b31bb1620dbbc2df4bd548fa59b59#code
 
+0xf90fC63e802fF84CD4C1D2837b9932ac64e52e59
+
 StakingWarmp:
 OLD:
 https://snowtrace.io/address/0x61DD09cD83d6bEd0AB622eaFa8bC9778791C0CAf#code
 NEW:
 https://snowtrace.io/address/0x3257e4293c1f19928f325bd89400706dfaa22724#code
+
+0xF98adCA9b43F6D852074f311D1C5ef21E7BEd50e
 
 Treasury:
 https://snowtrace.io/address/0x50862E119a56ff41c6d660128e072ADd7dEc837b#code
@@ -49,5 +57,13 @@ https://snowtrace.io/address/0x907c9dc537a5ae4e5d56d3c881de0382cef43a3a#code
 wsVERSE address:
 https://snowtrace.io/address/0xE6420ee02D2B61Bd8556E5F8a5197983ce51e1f1#code
 
+0xd9d9E49A6B053E77Fa4457e0d2cE218A99C43973
+
 wAvaxBond Depository:
 https://snowtrace.io/address/0xa28DDB429DEEE0c6D70580f318A0cEf5bD6dC883#code
+
+100000000000000000000000000
+
+0x0000000000000000000000000000000000000000
+
+0x9c4677b1E17E7C68D7D2Cf1eFb64B5BC74577bd4

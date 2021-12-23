@@ -4,7 +4,7 @@ import { StableBond, CustomBond } from "./stable-bond";
 
 import DaiIcon from "../../assets/tokens/DAI.e.svg";
 import AvaxIcon from "../../assets/tokens/AVAX.svg";
-import MimTimeIcon from "../../assets/tokens/TIME-MIM.svg";
+import DaiVerseIcon from "../../assets/tokens/VERSE-DAI.png";
 import AvaxTimeIcon from "../../assets/tokens/TIME-AVAX.svg";
 
 import { StableBondContract, LpBondContract, WavaxBondContract, StableReserveContract, LpReserveContract } from "../../abi";
@@ -44,8 +44,8 @@ export const wavax = new CustomBond({
 export const daiVerse = new LPBond({
     name: "dai_verse_lp",
     displayName: "VERSE-DAI LP",
-    bondToken: "MIM",
-    bondIconSvg: MimTimeIcon,
+    bondToken: "DAI",
+    bondIconSvg: DaiVerseIcon,
     bondContractABI: LpBondContract,
     reserveContractAbi: LpReserveContract,
     networkAddrs: {
@@ -74,4 +74,4 @@ export const avaxVerse = new CustomLPBond({
 });
 
 // export default [mim, wavax, mimTime, avaxTime];
-export default [dai, wavax];
+export default [dai, daiVerse];
