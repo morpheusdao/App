@@ -83,8 +83,8 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
         stakeAllowance = await timeContract.allowance(address, addresses.STAKING_HELPER_ADDRESS);
     }
 
-    if (addresses.VERSE_ADDRESS) {
-        const sverseContract = new ethers.Contract(addresses.VERSE_ADDRESS, sVerseTokenContract, provider);
+    if (addresses.SVERSE_ADDRESS) {
+        const sverseContract = new ethers.Contract(addresses.SVERSE_ADDRESS, sVerseTokenContract, provider);
         sverseBalance = await sverseContract.balanceOf(address);
         unstakeAllowance = await sverseContract.allowance(address, addresses.STAKING_ADDRESS);
 
@@ -97,7 +97,7 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
         const wsverseContract = new ethers.Contract(addresses.WSVERSE_ADDRESS, wsVerseTokenContract, provider);
         wsverseBalance = await wsverseContract.balanceOf(address);
     }
-
+    console.log("verseBalance===>",sverseBalance)
     return {
         balances: {
             sverse: ethers.utils.formatUnits(sverseBalance, "gwei"),
