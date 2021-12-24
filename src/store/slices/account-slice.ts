@@ -97,7 +97,6 @@ export const loadAccountDetails = createAsyncThunk("account/loadAccountDetails",
         const wsverseContract = new ethers.Contract(addresses.WSVERSE_ADDRESS, wsVerseTokenContract, provider);
         wsverseBalance = await wsverseContract.balanceOf(address);
     }
-    console.log("verseBalance===>",sverseBalance)
     return {
         balances: {
             sverse: ethers.utils.formatUnits(sverseBalance, "gwei"),
