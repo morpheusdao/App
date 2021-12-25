@@ -84,7 +84,7 @@ function NavContent() {
                         </div>
                     </Link>
 
-                    <Link
+                    {/* <Link
                         component={NavLink}
                         id="bond-nav"
                         to="/mints"
@@ -97,9 +97,9 @@ function NavContent() {
                             <img alt="" src={BondIcon} />
                             <p>Mint</p>
                         </div>
-                    </Link>
+                    </Link> */}
 
-                    <div className="bond-discounts">
+                    {/* <div className="bond-discounts">
                         <p>Mint discounts</p>
                         {bonds.map((bond, i) => (
                             <Link component={NavLink} to={`/mints/${bond.name}`} key={i} className={"bond"}>
@@ -113,7 +113,7 @@ function NavContent() {
                                 )}
                             </Link>
                         ))}
-                    </div>
+                    </div> */}
 
                     <Link
                         component={NavLink}

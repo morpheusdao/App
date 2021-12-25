@@ -74,4 +74,5 @@ export const avaxVerse = new CustomLPBond({
 });
 
 // export default [mim, wavax, mimTime, avaxTime];
+
 export default [dai];
