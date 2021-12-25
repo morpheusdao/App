@@ -124,12 +124,13 @@ function Dashboard() {
                                     {isAppLoading ? (
                                         <Skeleton width="250px" />
                                     ) : (
-                                        new Intl.NumberFormat("en-US", {
-                                            style: "currency",
-                                            currency: "USD",
-                                            maximumFractionDigits: 0,
-                                            minimumFractionDigits: 0,
-                                        }).format(app.rfv)
+                                        // new Intl.NumberFormat("en-US", {
+                                        //     style: "currency",
+                                        //     currency: "USD",
+                                        //     maximumFractionDigits: 0,
+                                        //     minimumFractionDigits: 0,
+                                        // }).format(app.rfv)
+                                        app.rfv.toFixed(6)
                                     )}
                                 </p>
                             </div>

@@ -1,7 +1,7 @@
 import { ethers } from "ethers";
 import { getAddresses } from "../../constants";
 import { StakingContract, sVerseTokenContract, VerseTokenContract } from "../../abi";
-import { setAll } from "../../helpers";
+import { loadTokenPrices, setAll } from "../../helpers";
 import { createSlice, createSelector, createAsyncThunk } from "@reduxjs/toolkit";
 import { JsonRpcProvider } from "@ethersproject/providers";
 import { getMarketPrice, getTokenPrice } from "../../helpers";
@@ -17,6 +17,8 @@ export const loadAppDetails = createAsyncThunk(
     "app/loadAppDetails",
     //@ts-ignore
     async ({ networkID, provider }: ILoadAppDetails) => {
+        console.log("sadsadsad",)
+        await loadTokenPrices();
         const mimPrice = getTokenPrice("MIM");
         const addresses = getAddresses(networkID);
 
@@ -47,6 +49,7 @@ export const loadAppDetails = createAsyncThunk(
         const timeAmount = timeBondsAmounts.reduce((timeAmount0, timeAmount1) => timeAmount0 + timeAmount1, 0);
         const timeSupply = totalSupply - timeAmount;
 
+        console.log("qwerty",{rfvTreasury , timeSupply})
         const rfv = rfvTreasury / timeSupply;
 
         const epoch = await stakingContract.epoch();

@@ -1,4 +1,4 @@
-import React, { useState, ReactElement, useContext, useMemo, useCallback } from "react";
+import React, { useState, ReactElement, useContext, useMemo, useCallback, useEffect } from "react";
 import Web3Modal from "web3modal";
 import { StaticJsonRpcProvider, JsonRpcProvider, Web3Provider } from "@ethersproject/providers";
 import WalletConnectProvider from "@walletconnect/web3-provider";
@@ -54,7 +54,8 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
     const [address, setAddress] = useState("");
 
     const [uri, setUri] = useState(getMainnetURI());
-    const [provider, setProvider] = useState<JsonRpcProvider>(new StaticJsonRpcProvider(uri));
+    const [provider, setProvider] = useState<JsonRpcProvider>(new JsonRpcProvider(getMainnetURI()));
+    const [defaultProvider, setDefaultProvider] = useState<JsonRpcProvider>(new JsonRpcProvider(uri));
 
     const [web3Modal] = useState<Web3Modal>(
         new Web3Modal({
@@ -71,6 +72,17 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
             },
         }),
     );
+
+
+
+    useEffect(()=>{
+        if(!provider){
+            setProvider(defaultProvider)
+        }
+    },[provider])
+
+
+    
 
     const hasCachedProvider = (): boolean => {
         if (!web3Modal) return false;
