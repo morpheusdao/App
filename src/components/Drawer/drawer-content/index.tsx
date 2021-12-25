@@ -1,18 +1,19 @@
 import { useCallback, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Social from "./social";
-import StakeIcon from "../../../assets/icons/stake.svg";
-import BondIcon from "../../../assets/icons/bond.svg";
-import WonderlandIcon from "../../../assets/icons/traver_black.png";
-import DashboardIcon from "../../../assets/icons/dashboard.svg";
 import { trim, shorten } from "../../../helpers";
 import { useAddress } from "../../../hooks";
 import useBonds from "../../../hooks/bonds";
 import { Link } from "@material-ui/core";
 import { Skeleton } from "@material-ui/lab";
 import "./drawer-content.scss";
-import DocsIcon from "../../../assets/icons/stake.svg";
-import GlobeIcon from "../../../assets/icons/wonderglobe.svg";
+import DocsIcon from "../../../assets/icons/docs.svg";
+import StakeIcon from "../../../assets/icons/stake.svg";
+import BondIcon from "../../../assets/icons/bond.svg";
+import WonderlandIcon from "../../../assets/icons/traver_black.png";
+import DashboardIcon from "../../../assets/icons/dashboard.svg";
+import ChartIcon from "../../../assets/icons/chart.svg";
+import CalculatorIcon from "../../../assets/icons/calculator.svg";
 import classnames from "classnames";
 
 function NavContent() {
@@ -123,8 +124,14 @@ function NavContent() {
                         className={classnames("button-dapp-menu", { active: isActive })}
                     >
                         <div className="dapp-menu-item">
-                            <img alt="" src={GlobeIcon} />
+                            <img alt="" src={CalculatorIcon} />
                             <p>Calculator</p>
+                        </div>
+                    </Link>
+                    <Link href="https://dexscreener.com/avalanche/0xbf56ea8a64faf58889584930716e655317d22ea6" target="_blank" className={classnames("button-dapp-menu", { active: isActive })}>
+                        <div className="dapp-menu-item">
+                            <img alt="" src={ChartIcon} />
+                            <p>Verse Chart</p>
                         </div>
                     </Link>
                     <Link href="https://traverse.gitbook.io/traverse/" target="_blank" className={classnames("button-dapp-menu", { active: isActive })}>
