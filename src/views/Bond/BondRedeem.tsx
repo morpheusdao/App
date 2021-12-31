@@ -71,7 +71,7 @@ function BondRedeem({ bond }: IBondRedeem) {
                 >
                     <p>{txnButtonText(pendingTransactions, "redeem_bond_" + bond.name, "Claim")}</p>
                 </div>
-                <div
+                {/* <div
                     className="transaction-button bond-approve-btn"
                     onClick={() => {
                         if (isPendingTxn(pendingTransactions, "redeem_bond_" + bond.name + "_autostake")) return;
@@ -79,7 +79,7 @@ function BondRedeem({ bond }: IBondRedeem) {
                     }}
                 >
                     <p>{txnButtonText(pendingTransactions, "redeem_bond_" + bond.name + "_autostake", "Claim and Autostake")}</p>
-                </div>
+                </div> */}
             </Box>
 
             <Slide direction="right" in={true} mountOnEnter unmountOnExit {...{ timeout: 533 }}>

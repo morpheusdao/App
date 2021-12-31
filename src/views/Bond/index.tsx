@@ -59,9 +59,9 @@ function Bond({ bond }: IBondProps) {
                                 <div className={classnames("bond-one-table-btn", { active: !view })} onClick={changeView(0)}>
                                     <p>Mint</p>
                                 </div>
-                                {/* <div className={classnames("bond-one-table-btn", { active: view })} onClick={changeView(1)}>
+                                <div className={classnames("bond-one-table-btn", { active: view })} onClick={changeView(1)}>
                                     <p>Redeem</p>
-                                </div> */}
+                                </div>
                             </div>
 
                             <TabPanel value={view} index={0}>
