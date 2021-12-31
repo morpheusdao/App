@@ -124,6 +124,7 @@ export const calcBondDetails = createAsyncThunk("bonding/calcBondDetails", async
             const avaxPrice = getTokenPrice("AVAX");
             bondPrice = bondPrice * avaxPrice;
         }
+        console.log("bondPricee",bondPrice.toString())
 
         bondDiscount = (marketPrice * Math.pow(10, 18) - bondPrice) / bondPrice;
     } catch (e) {
@@ -219,6 +220,7 @@ export const bondAsset = createAsyncThunk("bonding/bondAsset", async ({ value, a
         if (useAvax) {
             bondTx = await bondContract.deposit(valueInWei, maxPremium, depositorAddress, { value: valueInWei, gasPrice });
         } else {
+            console.log("buyBond",{valueInWei, maxPremium, depositorAddress})
             bondTx = await bondContract.deposit(valueInWei, maxPremium, depositorAddress, { gasPrice });
         }
         dispatch(

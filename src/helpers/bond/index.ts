@@ -18,7 +18,7 @@ export const dai = new StableBond({
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
         [Networks.AVAX]: {
-            bondAddress: "0x658aa84B0651A4aE2739773c3C8fE698e6c2A7d3",
+            bondAddress: "0x563FbA9B6694611C9362E73780064664b9fAaAeE",
             reserveAddress: "0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
         },
     },

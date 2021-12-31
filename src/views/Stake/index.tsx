@@ -48,6 +48,9 @@ function Stake() {
     const stakingTVL = useSelector<IReduxState, number>(state => {
         return state.app.stakingTVL;
     });
+    const marketPrice = useSelector<IReduxState, number>(state => {
+        return state.app.marketPrice;
+    });
 
     const pendingTransactions = useSelector<IReduxState, IPendingTxn[]>(state => {
         return state.pendingTransactions;
@@ -95,6 +98,10 @@ function Stake() {
     const trimmedStakingAPY = trim(stakingAPY * 100, 1);
     const stakingRebasePercentage = trim(stakingRebase * 100, 4);
     const nextRewardValue = trim((Number(stakingRebasePercentage) / 100) * Number(trimmedSverseBalance), 6);
+
+    const trimmedNextRewardValueAsDolar = trim(Number(nextRewardValue) * Number(marketPrice), 2);
+    const trimmedSverseBalanceAsDolar = trim(Number(trimmedSverseBalance) * Number(marketPrice), 2);
+    const trimmedVerseBalanceAsDolar = trim(Number(verseBalance) * Number(marketPrice), 2);
 
     return (
         <div className="stake-view">
@@ -252,17 +259,17 @@ function Stake() {
                                     <div className="stake-user-data">
                                         <div className="data-row">
                                             <p className="data-row-name">Your Balance</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(verseBalance), 4)} VERSE</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(verseBalance), 4)} VERSE</>} - ${trimmedVerseBalanceAsDolar} USD</p>
                                         </div>
 
                                         <div className="data-row">
                                             <p className="data-row-name">Your Staked Balance</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trimmedSverseBalance} sVERSE</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trimmedSverseBalance} sVERSE</>} - ${trimmedSverseBalanceAsDolar} USD</p>
                                         </div>
 
                                         <div className="data-row">
                                             <p className="data-row-name">Next Reward Amount</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} sVERSE</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{nextRewardValue} sVERSE</>} - ${trimmedNextRewardValueAsDolar} USD</p>
                                         </div>
 
                                         <div className="data-row">

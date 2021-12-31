@@ -1,4 +1,4 @@
-import { ethers } from "ethers";
+import { BigNumber, ethers } from "ethers";
 import { getAddresses } from "../../constants";
 import { VerseTokenContract, sVerseTokenContract, MimTokenContract, wsVerseTokenContract } from "../../abi";
 import { setAll } from "../../helpers";
@@ -167,8 +167,8 @@ export const calculateUserBondDetails = createAsyncThunk("account/calculateUserB
     const avaxBalance = await provider.getSigner().getBalance();
     const avaxVal = ethers.utils.formatEther(avaxBalance);
 
-    const pendingPayoutVal = ethers.utils.formatUnits(pendingPayout, "gwei");
-
+    const pendingPayoutVal = pendingPayout/1e9
+    console.log("pendingPayoutVal",pendingPayoutVal)
     return {
         bond: bond.name,
         displayName: bond.displayName,
