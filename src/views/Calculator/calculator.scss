@@ -74,9 +74,11 @@
 
                 .calculator-card-metrics-value {
                     font-family: Montserrat Bold;
+                    word-break: break-all;
+                    white-space: break-spaces;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 24px;
+                    font-size: 21px;
                     line-height: 29px;
                     color: #FFFFFF;
                 }
