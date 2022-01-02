@@ -1,5 +1,7 @@
 .dapp-sidebar {
   height: 100vh;
+  display: none;
+  overflow: hidden;
   min-width: 280px;
   display: flex;
   flex-direction: column;
@@ -16,11 +18,22 @@
       margin: 10px;
   
       p{
-        font-family: Montserrat SemiBold;
+        font-family: Orbitron;
         font-size: 14px;
         color: #FFFFFF;
       }
     }
+  }
+  .TraverseIcon{
+    
+      font-family: Orbitron;
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 2px;
+      line-height: 20px;
+      color: #ffffff;
+    
   }
 
   .dapp-menu-links{
@@ -53,9 +66,10 @@
         
           p{
             font-weight: 600;
+            letter-spacing: 2px;
             font-size: 16px;
             color: #FFFFFF;
-            font-family: Montserrat SemiBold;
+            font-family: Orbitron;
           }
         }
       }
@@ -79,7 +93,8 @@
         }
       
         p{
-          font-family: Montserrat;
+          font-family: Orbitron;
+          letter-spacing: 2px;
           font-size: 14px;
           line-height: 17px;
           color: rgba(255, 255, 255, 0.6);
@@ -117,8 +132,9 @@
       }
 
       p{
-        font-family: Montserrat SemiBold;
+        font-family: Orbitron;
         font-weight: 600;
+        letter-spacing: 2px;
         font-size: 16px;
         line-height: 20px;
         color: #FFFFFF;
