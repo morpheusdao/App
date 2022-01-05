@@ -10,7 +10,7 @@ import "./drawer-content.scss";
 import DocsIcon from "../../../assets/icons/docs.svg";
 import StakeIcon from "../../../assets/icons/stake.svg";
 import BondIcon from "../../../assets/icons/bond.svg";
-import WonderlandIcon from "../../../assets/icons/Index_traverse.gif";
+//import WonderlandIcon from "../../../assets/icons/Index_traverse.gif";
 import DashboardIcon from "../../../assets/icons/dashboard.svg";
 import ChartIcon from "../../../assets/icons/chart.svg";
 import CalculatorIcon from "../../../assets/icons/calculator.svg";
@@ -42,8 +42,9 @@ function NavContent() {
         <div className="dapp-sidebar">
             <div className="branding-header">
                 <Link href="https://traverse.money" target="_blank">
-                    <img alt="" src={WonderlandIcon} width={130}/>
+                    {/*<img alt="" src={WonderlandIcon} width={130}/>*/}
                     <div className="TraverseIcon">
+                        
                         <p>Traverse</p>
                         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
                         </link>

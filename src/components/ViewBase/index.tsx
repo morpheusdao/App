@@ -62,17 +62,17 @@ function ViewBase({ children }: IViewBaseProps) {
                     <Drawer />
                 </Hidden>
             </div>
+     (
+        <div className="landing-background">
+            <div className="landing-background-blobs-top">
+                <video autoPlay muted loop id="myVideo">
+                    <source  src="background.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    ); 
             <div className={`${classes.content} ${isSmallerScreen && classes.contentShift}`}>
-                {/* {!isSmallerScreen && (
-                    <div className="cubes-top">
-                        <p>{cubesImage}</p>
-                    </div>
-                )}
-                {!isSmallScreen && (
-                    <div className="cubes-bottom">
-                        <p>{cubesImage}</p>
-                    </div>
-                )} */}
+            
                 {children}
             </div>
         </div>
