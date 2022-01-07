@@ -63,13 +63,11 @@ function ViewBase({ children }: IViewBaseProps) {
                 </Hidden>
             </div>
      (
-        <div className="landing-background">
-            <div className="landing-background-blobs-top">
-                <video autoPlay muted loop id="myVideo">
-                    <source  src="background.mp4" type="video/mp4" />
+                    <div className="App-Video">
+                     <video autoPlay muted loop className="App-Video-background">
+                        <source  src="background.mp4" type="video/mp4" />
                 </video>
             </div>
-        </div>
     ); 
             <div className={`${classes.content} ${isSmallerScreen && classes.contentShift}`}>
             
