@@ -6,7 +6,9 @@ import TraverseIcon from "../../assets/icons/traver_black.gif";
 function Loader() {
     return (
         <div className="loader-wrap">
-            <img alt="" src={TraverseIcon} width={130}/>
+            <div className="loader-image">
+                <img alt="" src={TraverseIcon} width={130}/>
+            </div>
         </div>
     );
 }
