@@ -34,8 +34,8 @@ export const wavax = new CustomBond({
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
         [Networks.AVAX]: {
-            bondAddress: "0xa28DDB429DEEE0c6D70580f318A0cEf5bD6dC883",
-            reserveAddress: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+            bondAddress: "0x177eBDfBeFdf92C426f11B7520203B1C5D6b0250",
+            reserveAddress: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
         },
     },
     // tokensInStrategy: "756916000000000000000000",
@@ -50,11 +50,11 @@ export const daiVerse = new LPBond({
     reserveContractAbi: LpReserveContract,
     networkAddrs: {
         [Networks.AVAX]: {
-            bondAddress: "0xA184AE1A71EcAD20E822cB965b99c287590c4FFe",
-            reserveAddress: "0x113f413371fc4cc4c9d6416cf1de9dfd7bf747df",
+            bondAddress: "0xc168A3083907d3261e78BFb830ea8E5019225BCd",
+            reserveAddress: "0xbf56ea8a64faf58889584930716e655317d22ea6",
         },
     },
-    lpUrl: "https://exchange.lydia.finance/#/add/0x130966628846BFd36ff31a822705796e8cb8C18D/0xb54f16fB19478766A268F172C9480f8da1a7c9C3",
+    lpUrl: "https://exchange.lydia.finance/#/add/0xB72ab6f7177bBb41eFcC17D817778d77460259F1/0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
 });
 
 export const avaxVerse = new CustomLPBond({
@@ -75,4 +75,4 @@ export const avaxVerse = new CustomLPBond({
 
 // export default [mim, wavax, mimTime, avaxTime];
 
-export default [dai];
+export default [dai, daiVerse];
