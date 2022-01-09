@@ -73,6 +73,24 @@ export const avaxVerse = new CustomLPBond({
     lpUrl: "https://exchange.lydia.finance/#/add/AVAX/0xb54f16fB19478766A268F172C9480f8da1a7c9C3",
 });
 
+
+export const daVerse = new LPBond({
+    name: "da_verse_lp",
+    displayName: "VERSE-Avax LP",
+    bondToken: "DAI",
+    bondIconSvg: DaiVerseIcon,
+    bondContractABI: LpBondContract,
+    reserveContractAbi: LpReserveContract,
+    networkAddrs: {
+        [Networks.AVAX]: {
+            bondAddress: "0xd3D159E16fE7E69a1188962149044177c0784C3E",
+            reserveAddress: "0x288ea998bab3e0cbe7dec38a7f383ec2af1364f7",
+        },
+    },
+    lpUrl: "https://exchange.lydia.finance/#/add/AVAX/0xB72ab6f7177bBb41eFcC17D817778d77460259F1",
+
+});
+
 // export default [mim, wavax, mimTime, avaxTime];
 
-export default [dai, daiVerse];
+export default [avaxVerse, dai, daiVerse];
