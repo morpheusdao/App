@@ -93,4 +93,4 @@ export const daVerse = new LPBond({
 
 // export default [mim, wavax, mimTime, avaxTime];
 
-export default [avaxVerse, dai, daiVerse];
+export default [daVerse, dai, daiVerse];
