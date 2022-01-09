@@ -23,7 +23,7 @@ export function BondDataCard({ bond }: IBondProps) {
                         {bond.isLP && (
                             <div>
                                 <Link href={bond.lpUrl} target="_blank">
-                                    <p className="bond-name-title">View Contract</p>
+                                    <p className="bond-name-title">Buy LP</p>
                                 </Link>
                             </div>
                         )}
@@ -80,7 +80,7 @@ export function BondTableData({ bond }: IBondProps) {
                     <p className="bond-name-title">{bond.displayName}</p>
                     {bond.isLP && (
                         <Link color="primary" href={bond.lpUrl} target="_blank">
-                            <p className="bond-name-title">View Contract</p>
+                            <p className="bond-name-title">Buy LP</p>
                         </Link>
                     )}
                 </div>
